@@ -509,7 +509,7 @@ flats['city_centers_nearest_km'] = flats['city_centers_nearest_km'].round()
 # In[68]:
 
 
-#flats[['total_area','living_area','kitchen_area','last_price','rooms','ceiling_height','floor','floor_status','l','city_centfloors_totaers_nearest','airports_nearest','parks_nearest','day','month']].describe()
+flats[['total_area','living_area','kitchen_area','last_price','rooms','ceiling_height','floor','floor_status','l','city_centfloors_totaers_nearest','airports_nearest','parks_nearest','day','month']].describe()
 
 # После изучения описательной таблицы, проведем анализ характеристик, для этого составим гистограммы для каждого условия по задаче
 
@@ -689,7 +689,7 @@ plt.show()
 # In[87]:
 
 
-#flats['floor_status'].describe()
+flats['floor_status'].describe()
 
 # Изучаем days_exposition на среднее и медианные значения
 
@@ -851,8 +851,8 @@ flats.groupby('city_status').agg({'price_per_meter':'mean'}).sort_values(by='pri
 # In[105]:
 
 
-#flats['cityCenters_nearest_km'] = flats['cityCenters_nearest'] / 1000
-#flats['cityCenters_nearest_km'] = flats['cityCenters_nearest_km'].round()
+flats['cityCenters_nearest_km'] = flats['cityCenters_nearest'] / 1000
+flats['cityCenters_nearest_km'] = flats['cityCenters_nearest_km'].round()
 
 # In[106]:
 
