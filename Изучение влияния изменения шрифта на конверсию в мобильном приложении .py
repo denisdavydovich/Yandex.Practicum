@@ -412,14 +412,6 @@ user_only_sorted = user_only.sort_values()
 print("Проверка на то, чтобы каждый пользователь состоял только в одной группе:")
 print(user_only_sorted)
 
-# In[38]:
-
-
-# Код ревьюера
-# Проверим пользователей, которые могли участвовать в двух или нескольких группах одновременно:
-data.groupby('device_id').agg({'group':'nunique'}).query('group > 1') 
-
-
 # In[39]:
 
 
