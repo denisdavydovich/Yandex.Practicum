@@ -185,14 +185,6 @@ flats['locality_name'] = flats['locality_name'].str.replace('ё', 'е', regex=Tr
 
 flats['locality_name'] = flats['locality_name'].str.replace('поселок городского типа', 'поселок', regex=True)
 
-
-# <div class="alert alert-block alert-success">✔️
-#     
-# 
-# __Комментарий от ревьюера №1__
-# 
-# Отличный код
-
 # Снова считаем уникальные значения и пропуски
 
 # In[24]:
@@ -753,15 +745,6 @@ plt.show()
 sns.scatterplot(x='last_price', y='floor_status',data=flats)
 plt.title('Зависимость стоимостьи жилья от типа этажа', fontsize= 12)
 plt.show()
-
-
-# <div class="alert alert-block alert-success">✔️
-#     
-# 
-# __Комментарий от ревьюера №1__
-# 
-# Как в песне, "первый и последний этаж не предлагать". Традиционно, квартиры на первом и последнем этажах считаются самыми неудобными для жизни и это отражается на их стоимости.
-# </div>
 
 # In[94]:
 
