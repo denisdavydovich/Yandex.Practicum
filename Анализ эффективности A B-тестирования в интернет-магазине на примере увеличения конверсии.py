@@ -161,19 +161,6 @@ visitorsAggregated = datesGroups.apply(lambda x: visitors[np.logical_and(visitor
 cumulativeData = ordersAggregated.merge(visitorsAggregated, left_on=['date', 'group'], right_on=['date', 'group'])
 cumulativeData.columns = ['date', 'group', 'orders', 'buyers', 'revenue', 'visitors']
 
-
-# <div class="alert alert-warning">
-# <h2> Комментарий ревьюера 🤓<a class="tocSkip"> </h2>
-#         
-# Можно проверить, корректно ли был содан датафрейм cummulativeData. Например, совпадают ли минимальная и максимальная даты в этом датафрейме с минимальной и максимальной датой в исходных данных. </div>   
-
-# <div class="alert alert-info"> <b>Сделал проверку, все корректно </b></div>
-
-# <div class="alert alert-success">
-# <h2> Комментарий ревьюера 😊 v_2 <a class="tocSkip"> </h2>
-# 
-# Отлично)
-
 # In[18]:
 
 
