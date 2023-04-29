@@ -316,19 +316,7 @@ plt.show()
 
 # сводная таблица по платформам
 
-platform_sales = games_df.pivot_table(inde​
-713
-# <div class="alert alert-success">
-714
-# <font size="4", color= "seagreen"><b>✔️ Комментарий ревьюера</b></font>
-715
-#     <br /> 
-716
-#     <font size="3", color = "black">
-717
-# <br />Важно удалить пропуски и «заглушки» перед проведением теста, молодец
-718
-x='platform', values='total_sales', aggfunc='sum')
+platform_sales = games_df.pivot_table(index='platform', values='total_sales', aggfunc='sum')
 
 # сортировка и вывод 10 первых
 
