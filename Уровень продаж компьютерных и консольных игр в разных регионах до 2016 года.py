@@ -335,19 +335,6 @@ plt.xlabel('Год выпуска')
 plt.grid(True)
 plt.show();
 
-
-# In[40]:
-
-
-# actual_periodвв.groupby('year_of_release')['total_sales'].sum().plot(x='year_of_release,', 
-#                                                               y='total_sales', 
-#                                                               kind='bar', 
-#                                                               figsize=(9,5),color = 'maroon')
-# plt.title('Продажи по годам\n  ')
-# plt.xlabel('Год выпуска')
-# plt.grid(True)
-# plt.show();
-
 # In[41]:
 
 
