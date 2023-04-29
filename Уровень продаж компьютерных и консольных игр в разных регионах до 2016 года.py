@@ -287,13 +287,6 @@ plt.ylabel("Кол-во выпусков")
 plt.title("Кол-во выпусков игр по годам")
 plt.show()
 
-
-# <div class="alert alert-success">
-# <font size="4", color= "seagreen"><b>✔️ Комментарий ревьюера</b></font>
-#     <br /> 
-#     <font size="3", color = "black">
-# <br /> Классный график, все элементы добавлены, молодец
-
 # ### Выделим период 2012-2016
 
 # In[36]:
@@ -323,7 +316,19 @@ plt.show()
 
 # сводная таблица по платформам
 
-platform_sales = games_df.pivot_table(index='platform', values='total_sales', aggfunc='sum')
+platform_sales = games_df.pivot_table(inde​
+713
+# <div class="alert alert-success">
+714
+# <font size="4", color= "seagreen"><b>✔️ Комментарий ревьюера</b></font>
+715
+#     <br /> 
+716
+#     <font size="3", color = "black">
+717
+# <br />Важно удалить пропуски и «заглушки» перед проведением теста, молодец
+718
+x='platform', values='total_sales', aggfunc='sum')
 
 # сортировка и вывод 10 первых
 
@@ -715,13 +720,6 @@ pc_df.head()
 pc_user_score = pd.Series(pc_df['user_score'])
 
 pc_user_score
-
-
-# <div class="alert alert-success">
-# <font size="4", color= "seagreen"><b>✔️ Комментарий ревьюера</b></font>
-#     <br /> 
-#     <font size="3", color = "black">
-# <br />Важно удалить пропуски и «заглушки» перед проведением теста, молодец
 
 # In[73]:
 
